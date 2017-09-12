@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Seasons" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="lx9-e3-EMX" userLabel="Horizontal Stack View">
+                                <rect key="frame" x="19" y="100" width="338" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hz9-VM-mKX">
+                                        <rect key="frame" x="8" y="8" width="76" height="24"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Spring"/>
+                                        <connections>
+                                            <action selector="ChooseSeason:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0F5-sr-O53"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wce-Pc-ELR">
+                                        <rect key="frame" x="90" y="8" width="76" height="24"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Summer"/>
+                                        <connections>
+                                            <action selector="ChooseSeason:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f3X-Sr-kvN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7T-cc-Zou">
+                                        <rect key="frame" x="172" y="8" width="76" height="24"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Fall"/>
+                                        <connections>
+                                            <action selector="ChooseSeason:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nj3-32-RYi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw2-Sr-fTS">
+                                        <rect key="frame" x="254" y="8" width="76" height="24"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Winter"/>
+                                        <connections>
+                                            <action selector="ChooseSeason:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tpx-GY-mf2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wce-Pc-ELR" firstAttribute="width" secondItem="Hz9-VM-mKX" secondAttribute="width" id="OZl-Or-q4p"/>
+                                    <constraint firstAttribute="height" constant="40" id="gQ7-G1-vxR"/>
+                                    <constraint firstItem="jw2-Sr-fTS" firstAttribute="width" secondItem="Hz9-VM-mKX" secondAttribute="width" id="ot2-JZ-AH5"/>
+                                    <constraint firstItem="m7T-cc-Zou" firstAttribute="width" secondItem="Hz9-VM-mKX" secondAttribute="width" id="srv-Zr-wIy"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a Season" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Y3-np-PeK">
+                                <rect key="frame" x="126.5" y="587" width="122.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fLf-66-427"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seasons" translatesAutoresizingMaskIntoConstraints="NO" id="mnn-eb-2GV">
+                                <rect key="frame" x="8" y="160" width="358" height="407"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mnn-eb-2GV" secondAttribute="height" multiplier="126:143" id="yAk-jL-i1h"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Four Seasons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAq-31-O7v">
+                                <rect key="frame" x="91" y="60" width="192.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PqW-hV-dmg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mnn-eb-2GV" firstAttribute="top" secondItem="lx9-e3-EMX" secondAttribute="bottom" constant="20" id="55T-NL-4qV"/>
+                            <constraint firstItem="9Y3-np-PeK" firstAttribute="top" secondItem="mnn-eb-2GV" secondAttribute="bottom" constant="20" id="72g-d1-TPU"/>
+                            <constraint firstItem="lx9-e3-EMX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bfi-Yz-NWl"/>
+                            <constraint firstItem="lx9-e3-EMX" firstAttribute="top" secondItem="MAq-31-O7v" secondAttribute="bottom" constant="10" id="Pvr-8K-ckU"/>
+                            <constraint firstItem="MAq-31-O7v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="cZC-Ob-T4o"/>
+                            <constraint firstItem="mnn-eb-2GV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eNn-Qe-Xhy"/>
+                            <constraint firstItem="9Y3-np-PeK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fCm-EM-HQG"/>
+                            <constraint firstItem="MAq-31-O7v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qWX-Zv-pos"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9Y3-np-PeK" secondAttribute="bottom" constant="50" id="shW-5Z-SnZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Fall" destination="m7T-cc-Zou" id="ZaI-c1-C3W"/>
+                        <outlet property="SeasonImage" destination="mnn-eb-2GV" id="gQE-i5-hZs"/>
+                        <outlet property="SeasonLabel" destination="9Y3-np-PeK" id="Htw-9U-ZxM"/>
+                        <outlet property="Spring" destination="Hz9-VM-mKX" id="cy4-az-rbE"/>
+                        <outlet property="Summer" destination="wce-Pc-ELR" id="3LM-R9-1F6"/>
+                        <outlet property="Winter" destination="jw2-Sr-fTS" id="0R5-Ky-2IR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.199999999999999" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Seasons" width="266" height="286"/>
+    </resources>
+</document>
