@@ -146,6 +146,7 @@
 				TargetAttributes = {
 					FA7653C21F6AF85A00E3F582 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JS9K7LS56Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -324,6 +325,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JS9K7LS56Q;
 				INFOPLIST_FILE = Sauce/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = schwartz.Sauce;
@@ -336,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JS9K7LS56Q;
 				INFOPLIST_FILE = Sauce/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = schwartz.Sauce;

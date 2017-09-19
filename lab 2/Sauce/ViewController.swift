@@ -38,11 +38,14 @@ class ViewController: UIViewController {
     }
     func updateImage(){
         if realestSwitch.isOn{
-            
+            line2.text=line2.text?.uppercased()
+
             realestLabel.text = "Goldilocks"
         }
         else {
             realestLabel.text = "Gucci Mane"
+            line2.text=line2.text?.lowercased()
+
         }
         if SauceSelection.selectedSegmentIndex == 0 {
 
@@ -133,6 +136,7 @@ class ViewController: UIViewController {
                     print(error)
                 }
                 line2.text = "Not that Lost"
+                
             }
             else if (lostSlider.value>1 && lostSlider.value<2){
                 do{
@@ -165,6 +169,17 @@ class ViewController: UIViewController {
                 line2.text = "So Lost"
             }
             line3.text = ""
+            if realestSwitch.isOn{
+                line2.text=line2.text?.uppercased()
+                line2.textColor = UIColor.red
+
+                }
+            else {
+                line2.text=line2.text?.lowercased()
+                line2.textColor = UIColor.green
+
+            }
+
         }
 
     
@@ -178,6 +193,8 @@ class ViewController: UIViewController {
         line1.text = "\"If you don't have the sauce, then you're lost."
         line2.text = "But you can also be lost in the sauce.\""
         line3.text = "- Gucci Mane"
+        line2.textColor = UIColor.black
+
         SauceImage.image=UIImage(named: "GucciMane")
         realestLabel.text = "Gucci Mane"
         realestSwitch.isOn=false

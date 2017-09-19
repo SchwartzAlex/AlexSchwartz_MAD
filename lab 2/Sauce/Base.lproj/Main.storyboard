@@ -77,6 +77,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="GH1-Nd-l2V"/>
+                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gQS-es-82m" userLabel="switchstack">
                                 <rect key="frame" x="57" y="407" width="300" height="31"/>
@@ -200,6 +203,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="2Nu-t7-f28"/>
+                                    <constraint firstAttribute="height" constant="60" id="7Vw-Ig-ykF"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mpd-qW-eWo" userLabel="votestack">
@@ -230,6 +234,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="bHq-TS-XIo"/>
+                                    <constraint firstAttribute="height" constant="60" id="po3-MO-uA4"/>
                                 </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jel-Jx-dxq">
