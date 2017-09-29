@@ -11,6 +11,8 @@ import CoreLocation
 
 
 let locationManager = CLLocationManager()
+var heading = 0.0
+
 func enableBasicLocationServices() {
     
 }
@@ -19,11 +21,15 @@ func enableBasicLocationServices() {
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    @IBOutlet weak var latLabel: UILabel!
+    @IBOutlet weak var longLabel: UILabel!
+    @IBOutlet weak var distLabel: UILabel!
+    @IBOutlet weak var currentLatLabel: UILabel!
+    @IBOutlet weak var currentLongLabel: UILabel!
+    @IBOutlet weak var elevationLabel: UILabel!
     @IBOutlet weak var compassDial: UIImageView!
     @IBOutlet weak var angleStatus: UIImageView!
-    
     var locationManager: CLLocationManager = CLLocationManager()
-
     override func viewDidLoad() {
         super.viewDidLoad()
         compassDial.image=UIImage(named: "compass")
@@ -35,6 +41,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.delegate = self
             locationManager.desiredAccuracy=kCLLocationAccuracyBest
             locationManager.startUpdatingLocation()
+            locationManager.headingFilter = kCLHeadingFilterNone
+            locationManager.startUpdatingHeading()
+            
         }
     }
     
@@ -56,15 +65,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+        heading=newHeading.trueHeading
+        compassDial.transform = CGAffineTransform(rotationAngle: CGFloat(heading*3.14/180))
+    }
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
             if let location = locations.first{
-            print(location.coordinate)
+                print("Latitude: \(location.coordinate.latitude) Longitude: \(location.coordinate.longitude) Elevation: \(location.altitude) Heading: \(heading)")
         }
         func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
             if (status == CLAuthorizationStatus.denied){
                 locDisabled()
             }
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
