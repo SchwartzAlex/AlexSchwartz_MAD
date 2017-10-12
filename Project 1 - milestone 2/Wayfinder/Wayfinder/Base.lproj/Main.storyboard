@@ -23,14 +23,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rnO-Fc-4qn" userLabel="Compass Dial">
-                                <rect key="frame" x="87.5" y="400" width="200" height="200"/>
+                                <rect key="frame" x="75" y="375" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="rnO-Fc-4qn" secondAttribute="height" multiplier="1:1" id="27U-Wx-zzA"/>
-                                    <constraint firstAttribute="width" constant="200" id="Mdg-TK-Wpf"/>
+                                    <constraint firstAttribute="width" constant="225" id="Mdg-TK-Wpf"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OtD-Pt-pYa">
-                                <rect key="frame" x="37.5" y="317" width="300" height="83"/>
+                                <rect key="frame" x="37.5" y="292" width="300" height="83"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gSH-I3-WhW">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="20"/>
@@ -224,10 +224,10 @@
                                 </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Qy-y6-3jw">
-                                <rect key="frame" x="87.5" y="400" width="200" height="200"/>
+                                <rect key="frame" x="75" y="375" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0Qy-y6-3jw" secondAttribute="height" multiplier="1:1" id="Kml-U3-PP6"/>
-                                    <constraint firstAttribute="width" constant="200" id="mFk-wP-tgc"/>
+                                    <constraint firstAttribute="width" constant="225" id="mFk-wP-tgc"/>
                                 </constraints>
                             </imageView>
                             <pickerView autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6F4-RD-Ild">
