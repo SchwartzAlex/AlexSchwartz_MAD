@@ -70,6 +70,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewD
         latLabel.text = String(buildings[row].latitude)
         longLabel.text = String(buildings[row].longitude)
         builingIndicator = row
+        bearingToLocationRadian()
     }
     
     func locDisabled() {
