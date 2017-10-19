@@ -13,10 +13,15 @@ class Scene2ViewContoller: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var machineText: UITextField!
     @IBOutlet weak var weightText: UITextField!
     @IBOutlet weak var repsText: UITextField!
+    @IBOutlet weak var image: UIImageView!
     override func viewDidLoad() {
         machineText.delegate=self
         weightText.delegate=self
+        repsText.delegate=self
+
         super.viewDidLoad()
+        image.image=UIImage(named: "barbell")
+
 
         // Do any additional setup after loading the view.
     }
@@ -27,11 +32,11 @@ class Scene2ViewContoller: UIViewController, UITextFieldDelegate {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) { if segue.identifier == "doneWorkout"{
         let ViewController = segue.destination as! ViewController //check to see that text was entered in the textfields
-        if lastMachine.text!.isEmpty == false{
-            ViewController.user.machine=lastMachine.text }
-        if lastWeight.text!.isEmpty == false{ ViewController.user.weight=lastWeight.text
+        if machineText.text!.isEmpty == false{
+            ViewController.user.machine=machineText.text }
+        if weightText.text!.isEmpty == false{ ViewController.user.weight=weightText.text
         }
-        if lastReps.text!.isEmpty == false{ ViewController.user.reps=lastReps.text
+        if repsText.text!.isEmpty == false{ ViewController.user.reps=repsText.text
         }
     }
     }

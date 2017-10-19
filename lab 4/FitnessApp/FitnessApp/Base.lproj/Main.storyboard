@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -81,9 +82,19 @@
                                     <constraint firstAttribute="height" constant="112" id="dyc-mu-5Vg"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4gm-Gf-cGs">
+                                <rect key="frame" x="63" y="373" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="298-19-ke6"/>
+                                    <constraint firstAttribute="width" constant="250" id="C4l-bL-CE6"/>
+                                    <constraint firstAttribute="width" secondItem="4gm-Gf-cGs" secondAttribute="height" multiplier="1:1" id="gtA-l1-xCa"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4gm-Gf-cGs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6wM-8m-VUh"/>
+                            <constraint firstItem="Mbk-R0-POI" firstAttribute="top" secondItem="4gm-Gf-cGs" secondAttribute="bottom" id="9vS-rL-OnT"/>
                             <constraint firstItem="OQL-5z-EhU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ujl-gr-k8N"/>
                             <constraint firstAttribute="trailing" secondItem="Mbk-R0-POI" secondAttribute="trailing" constant="-10" id="YhT-1Y-ANI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mbk-R0-POI" secondAttribute="bottom" id="byj-9n-FGZ"/>
@@ -92,6 +103,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="image" destination="4gm-Gf-cGs" id="eOR-I2-Ipp"/>
                         <outlet property="lastMachine" destination="Xhl-5e-CH1" id="xIm-ak-RLj"/>
                         <outlet property="lastReps" destination="aDE-eN-Imu" id="LhJ-Kr-1RI"/>
                         <outlet property="lastWeight" destination="UkT-oP-qAu" id="4sD-u7-Y3m"/>
@@ -216,17 +228,29 @@
                                     <constraint firstAttribute="height" constant="140.5" id="ZQn-cF-Zfe"/>
                                 </constraints>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EGs-Ga-QMs">
+                                <rect key="frame" x="62" y="373" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EGs-Ga-QMs" secondAttribute="height" multiplier="1:1" id="M3R-dK-mo9"/>
+                                    <constraint firstAttribute="width" constant="250" id="bEd-2s-TKj"/>
+                                    <constraint firstAttribute="height" constant="250" id="sir-tW-rVd"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WTP-vL-bnh" firstAttribute="centerX" secondItem="GyN-kq-Mib" secondAttribute="centerX" id="1re-BO-bcD"/>
+                            <constraint firstItem="QfY-O4-gXr" firstAttribute="top" secondItem="EGs-Ga-QMs" secondAttribute="bottom" id="BU7-Ge-ctH"/>
                             <constraint firstItem="sYb-GN-cqd" firstAttribute="top" secondItem="QfY-O4-gXr" secondAttribute="bottom" id="M9d-Zp-PWc"/>
                             <constraint firstItem="WTP-vL-bnh" firstAttribute="top" secondItem="vuV-Sa-T1U" secondAttribute="bottom" constant="20" id="RvM-Ju-DMO"/>
                             <constraint firstItem="QfY-O4-gXr" firstAttribute="leading" secondItem="GyN-kq-Mib" secondAttribute="leading" constant="-10" id="YKp-HP-ZZH"/>
+                            <constraint firstItem="EGs-Ga-QMs" firstAttribute="width" secondItem="EGs-Ga-QMs" secondAttribute="height" multiplier="1:1" id="k2F-OY-qkL"/>
                             <constraint firstAttribute="trailing" secondItem="QfY-O4-gXr" secondAttribute="trailing" constant="-10" id="sb2-Tk-UIv"/>
+                            <constraint firstItem="EGs-Ga-QMs" firstAttribute="centerX" secondItem="GyN-kq-Mib" secondAttribute="centerX" id="vaF-hM-rHz"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="image" destination="EGs-Ga-QMs" id="hIl-Ys-1aQ"/>
                         <outlet property="machineText" destination="kzq-mI-O75" id="VIV-wg-AxB"/>
                         <outlet property="repsText" destination="lmw-5k-tDO" id="btA-ou-ORw"/>
                         <outlet property="weightText" destination="nu3-Mx-Cd5" id="K7F-e1-c8U"/>
