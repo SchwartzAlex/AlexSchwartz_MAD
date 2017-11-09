@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MealPlanner</string>
+    <string name="seasons">Select a Seasonal Cuisine:</string>
+    <string name="veggie">Vegetarian?</string>
+    <string name="horsePrompt">Could you eat a horse?</string>
+    <string name="yay">Of Course!</string>
+    <string name="nay">\"Neigh\"</string>
+    <string name="spring">Spring</string>
+    <string name="summer">Summer</string>
+    <string name="fall">Fall</string>
+    <string name="winter">Winter</string>
+    <string name="mealPrompt">What\'s your ideal meal?</string>
+    <string name="reset">Reset</string>
+
+</resources>
