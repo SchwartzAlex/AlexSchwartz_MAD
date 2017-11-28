@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Wayfinder</string>
+    <string name="nav">Navigating To:</string>
+    <string name="latitude">Current Latitude:</string>
+    <string name="latitudeVal">000.000000</string>
+    <string name="longitude">Current Longitude:</string>
+    <string name="longitudeVal">000.000000</string>
+    <string name="elev">Current Elevation:</string>
+    <string name="elevVal">0000 feet</string>
+    <string name="defaultNav">The North Pole</string>
+    <string name="dist">Distance:</string>
+    <string name="distVal">0 meters</string>
+
+
+
+</resources>
