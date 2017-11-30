@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Skate Park Finder</string>
+    <string name="prompt">Select your skating style</string>
+    <string-array name="style">
+        <item>Street</item>
+        <item>Vert</item>
+        <item>Combined</item>
+        <item>Park</item>
+        <item>Freestyle</item>
+    </string-array>
+    <string name="find">Find Skatepark</string>
+    <string name="suggested_SkatePark">This is your suggested Skate Park:</string>
+    <string name="Click">Click the image below for google maps</string>
+
+</resources>

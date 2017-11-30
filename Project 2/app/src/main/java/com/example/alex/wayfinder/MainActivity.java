@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             let c = 2 * atan2(sqrt(a), sqrt(1-a));
 
             d = R * c;
-            radiansBearing = atan2(y, x)*/
+            radiansBearing = atan2(y, x) */
 
         //Get actual device bearing
         //Update image rotation - Xcode logic:         angleStatus.transform = CGAffineTransform(rotationAngle: CGFloat(radiansBearing-(heading*3.14/180)))
