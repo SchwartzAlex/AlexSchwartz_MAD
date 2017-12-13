@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Wayfinder</string>
+    <string name="app_name">CampusWayfinder.com</string>
     <string name="nav">Navigating To:</string>
     <string name="latitude">Current Latitude:</string>
     <string name="latitudeVal">000.000000</string>
@@ -10,6 +10,11 @@
     <string name="defaultNav">The North Pole</string>
     <string name="dist">Distance:</string>
     <string name="distVal">0 meters</string>
+    <string name="feet">feet</string>
+    <string name="meters">Meters</string>
+    <string name="Kilometers">Kilometers</string>
+
+
 
 
 
