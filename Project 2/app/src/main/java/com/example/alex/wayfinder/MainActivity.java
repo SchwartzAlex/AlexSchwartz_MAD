@@ -2,6 +2,7 @@ package com.example.alex.wayfinder;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -9,6 +10,7 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
@@ -67,7 +69,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.ic_wayfinderlogo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
-
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         compass = (ImageView) findViewById(R.id.imageViewDial);
         dist = (TextView) findViewById(R.id.textViewDist);
@@ -142,6 +143,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
 
         locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+    }
+
+    public void loadWebSite(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("www.campuswayfinder.com"));
+        startActivity(intent);
     }
 
     private void filldata(){
